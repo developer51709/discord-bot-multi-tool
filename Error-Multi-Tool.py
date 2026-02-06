@@ -206,7 +206,6 @@ def get_random_username_mention():
         target_usernames = [name.strip() for name in user_input.split(",") if name.strip()]
 
         if target_usernames:
-           )
             if random.random() < 0.5:  
                 return ""
 
@@ -481,7 +480,7 @@ async def on_ready():
             print(f"- {member.name} ({member.id})")
 
     
-    await populate_channels() ly
+    await populate_channels()
 
 def on_enter_key(event):
     msg = message_entry.get()
