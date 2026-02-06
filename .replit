@@ -1,0 +1,18 @@
+modules = ["python-3.12"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+mode = "sequential"
+author = 53695201
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python Error-Multi-Tool.py"
